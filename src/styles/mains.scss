@@ -19,6 +19,11 @@
 }
 
 body {
+  background-color: #1F2023;
+  border: #DADADA;
+  h1, h2, p, button, a{
+    color: #DADADA;
+  }
   margin: 0;
   padding: 0;
   overflow-y: scroll;

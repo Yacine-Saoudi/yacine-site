@@ -1,6 +1,7 @@
 import React from "react"
+import scrollTo from "gatsby-plugin-smoothscroll"
 
-const Card = ({ heading, paragraph, imgUrl, projectLink }) => {
+const Card = ({ heading, paragraph, imgUrl, id }) => {
   return (
     <div
       className="card"
@@ -14,14 +15,14 @@ const Card = ({ heading, paragraph, imgUrl, projectLink }) => {
       <div className="content">
         <h1 className="header">{heading}</h1>
         <p className="text">{paragraph}</p>
-        <a
-          href={projectLink ? projectLink : "#"}
+        <button
+          onClick={() => scrollTo("#"+id)}
           target="_blank"
           rel="noopener noreferrer"
           className="btn"
         >
           Explore
-        </a>
+        </button>
       </div>
     </div>
   )
