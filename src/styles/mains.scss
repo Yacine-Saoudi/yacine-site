@@ -19,10 +19,15 @@
 }
 
 body {
-  background-color: #1F2023;
-  border: #DADADA;
-  h1, h2, p, button, a{
-    color: #DADADA;
+  background-color: #121212;
+  p {
+    color: #AED6EA;
+  }
+  h2{
+    color: #AED6EA
+  }
+  h1, a, button, h3{
+    color: #ADEBB9
   }
   margin: 0;
   padding: 0;

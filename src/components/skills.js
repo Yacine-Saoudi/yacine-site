@@ -1,17 +1,15 @@
 import React from "react"
-import data from "../yourdata"
 
-const Skills = () => {
+const Skills = ({project}) => {
   return (
     <div className="section">
       <div className="container">
         <div className="skills-container">
-          <h1>Skills</h1>
           <div className="skills-grid">
-            {data.skills.map((skill, index) => (
+            {project.langs.map((lang, index) => (
               <div className="skill" key={index}>
-                <img src={skill.img} alt="css"></img>
-                <p>{skill.para}</p>
+                <img src={lang.img} alt="css"></img>
+                <p>{lang.para}</p>
               </div>
             ))}
           </div>

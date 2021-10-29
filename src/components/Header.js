@@ -7,11 +7,6 @@ const Header = () => {
     <div className="section" id="home">
       <div className="container">
         <div className="header-wrapper">
-          <Fade bottom>
-            <h2>
-              Howdy folks, I'm {data.name}
-            </h2>
-          </Fade>
           <Fade bottom cascade>
             <div className="heading-wrapper">
               <h1>

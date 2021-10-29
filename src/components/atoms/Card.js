@@ -1,15 +1,12 @@
 import React from "react"
 import scrollTo from "gatsby-plugin-smoothscroll"
 
-const Card = ({ heading, paragraph, imgUrl, id }) => {
+const Card = ({ heading, paragraph, id }) => {
   return (
     <div
       className="card"
       style={{
-        backgroundImage:
-          "linear-gradient(to bottom, rgba(245, 246, 252, 0), rgba(0, 0, 0, 0.2)),url(" +
-          imgUrl +
-          ")",
+        backgroundColor: "#121212",
       }}
     >
       <div className="content">

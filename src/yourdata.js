@@ -1,16 +1,19 @@
 // Skills Icons
-import htmlIcon from "./images/html.svg"
-import cssIcon from "./images/css.svg"
-import reactIcon from "./images/react.svg"
-import jsIcon from "./images/javascript.svg"
-import designIcon from "./images/design.svg"
-import codeIcon from "./images/code.svg"
+import htmlIcon from "./images/html.png"
+import cIcon from "./images/c.png"
+import reactIcon from "./images/react.png"
+import jsIcon from "./images/javascript.png"
+import javaIcon from "./images/java.png"
+import pythonIcon from "./images/python.png"
+import mongooseIcon from "./images/mongoose.png"
+import expressIcon from "./images/express.png"
+import reduxIcon from "./images/redux.png"
+import nodeIcon from "./images/nodejs.png"
 
 // Social Icon
-import githubIcon from "./images/github.svg"
-import codepenIcon from "./images/codepen.svg"
-import dribbbleIcon from "./images/dribbble.svg"
-import instagramIcon from "./images/instagram.svg"
+import githubIcon from "./images/github.png"
+import linkedIn from "./images/linkedIn.png"
+
 
 export default {
   //(Please Do Not Remove The comma(,) after every variable)
@@ -20,15 +23,12 @@ export default {
   name: "Yacine",
   headerTagline: [
     //Line 1 For Header
-    "crying",
-    //Line 2 For Header
-    "why is it,",
-    //Line 3 For Header
-    "so hard",
+    "Hey, I'm Yacine!",
+
   ],
   //   Header Paragraph
   headerParagraph:
-    "My name is Yacine Saoudi, I'm a 2nd year Computer Science student at Carleton University, come take a look at my work!",
+    "Welcome to my portfolio site, here I show only a sample of what work I've done so far, come take a look!",
 
   //Contact Email
   contactEmail: "yac.sao453@gmail.com",
@@ -38,59 +38,145 @@ export default {
   // Work Section ------------------------
   projects: [
     {
-      title: "Sylabl Frontend", //Project Title - Add Your Project Title Here
+      title: "Sylabl", //Project Title - Add Your Project Title Here
       para:
         "Sylable is an open source project that aims to allow users to post videos and have an AI analyze their body language and speaking patterns to suggest improvments.", // Add Your Service Type Here
-      //Project Image - Add Your Project Image Here
-      imageSrc:
-        "https://images.unsplash.com/photo-1487837647815-bbc1f30cd0d2?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8Njl8fHBhc3RlbHxlbnwwfHwwfA%3D%3D&auto=format&fit=crop&w=400&q=60",
+      fullPara: "I was a fullstack developer on Sylabl. both frontend and backend were done using the MERN stack. I was responsible for a majority of the website including creating a secure sign up system using MongoDB, a login system that authenticates the user with a JSON webtoken, and a personal video posting page that allowed the user to upload and view their own .mp4 videos that is stored on an Amazon S3 bucket. The AI component is not completed yet but the intention is to allow the user to view relevant statistics that would give the user areas to improve in their speech delivieries.",
       id: "Sylabl",
+      github: [
+        {
+          link: "https://github.com/Yacine-Saoudi/orate-io-frontend",
+          name: "Sylabl Frontend Repo"
+        },
+        {
+          link: "https://github.com/Yacine-Saoudi/orate-io-backend",
+          name: "Sylabl Backend Repo"
+        },
+      ],
+      langs: [
+        {
+          img: javaIcon,
+          para:
+            "Java",
+        },
+        {
+          img: jsIcon,
+          para:
+            "JavaScript",
+        },
+        {
+          img: nodeIcon,
+          para:
+            "NodeJS",
+        },
+        {
+          img: reactIcon,
+          para:
+            "React",
+        },
+        {
+          img: reduxIcon,
+          para:
+            "Redux",
+        },
+        {
+          img: expressIcon,
+          para:
+            "Express",
+        },
+        {
+          img: mongooseIcon,
+          para:
+            "Mongoose",
+        },
+        {
+          img: htmlIcon,
+          para:
+            "HTML",
+        },
+      ]
      },
  
     {
       title: "Calorie Counter", //Project Title - Add Your Project Title Here
       para:
-        "This calorie counter was done in python using the TKinter library, it uses API's, very cool!", // Add Your Service Type Here
-      //Project Image - Add Your Project Image Here
-      imageSrc:
-        "https://images.unsplash.com/photo-1605153864431-a2795a1b2f95?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MXwyNTY3ODl8fGVufDB8fHw%3D&auto=format&fit=crop&w=400&q=60",
+        "This Calorie Counter allows the user to search for any food item and add it to their daily list which counts how many calories total has been consumed.", // Add Your Service Type Here
+      fullPara: "The Calories counter was completed in less than 24-hours with a team of 4. It was coded in Python and used rapidAPI to fetch the name of the food the user put in and return with relevant search results. I had only learned how to use API's recently so this was my first time using them in a project, to great success. My responsibilities centered around the search and API code, the GUI was created using the TKinter library",
       id: "Calorie",
+      github: [
+        {
+        link: "https://github.com/Yacine-Saoudi/hackathonRepo",
+        name: "Calorie Counter Repo"
+        },
+      ],
+      langs: [
+        {
+          img: pythonIcon,
+          para:
+            "Python",
+        }
+      ]
     },
     {
       title: "Mock Social Media Website", //Project Title - Add Your Project Title Here
       para:
-        "This website was used as practice to learn the MERN webstack. It was made following along with a tutorial from Udemy", // Add Your Service Type Here
-      //Project Image - Add Your Project Image Here
-      imageSrc:
-        "https://images.unsplash.com/photo-1504083898675-c896ecdae86e?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8MjJ8fHBhc3RlbHxlbnwwfHwwfA%3D%3D&auto=format&fit=crop&w=400&q=60",
+        "Website that allows a user to create an account and add, update, or delete their information", // Add Your Service Type Here
+      fullPara: "This unfinished project was my first time making a sizeable project using the MERN stack. As it is a fullstack project, I worked on making post, get, delete, etc. requests for user accounts that the user made themselves. Most requests required authentication and was done using a JSON web token. Passwords and account information were stored using MongoDB and salted to be kept secure. I also used tools like Postman to test any HTTP requests. ",
       id: "Mock", 
+      github: [
+        {
+        link: "https://github.com/Yacine-Saoudi/mern-practice",
+        name: "Mock Site Repo"
+        },
+      ],
+      langs: [
+        {
+          img: javaIcon,
+          para:
+            "Java",
+        },
+        {
+          img: jsIcon,
+          para:
+            "JavaScript",
+        },
+        {
+          img: nodeIcon,
+          para:
+            "NodeJS",
+        },
+        {
+          img: reactIcon,
+          para:
+            "React",
+        },
+        {
+          img: expressIcon,
+          para:
+            "Express",
+        },
+        {
+          img: mongooseIcon,
+          para:
+            "Mongoose",
+        },
+        {
+          img: htmlIcon,
+          para:
+            "HTML",
+        },
+      ]    
     }
-    /*
-    If You Want To Add More Project just Copy and Paste This At The End
-    ,{
-        title: 'Project Five',
-        para: 'Something Amazing',
-        imageSrc: "",
-        url: ''
-    }
-    */
   ],
 
   // End Work Section -----------------------
 
   // About Secton --------------
+  aboutParaTwo:    "As a second year student at Carleton, in terms of projects, I worked in Java, Python, and C during my courses and hackathons. I've been programming since high school using a variety of languages. I worked with the MERN webstack and have been a fullstack developer for Sylabl, an open-source project.",
+
+
   aboutParaOne:
-    "para one",
-  aboutParaTwo:
-    "para 2",
-  aboutParaThree:
-    "parea 3 smilers",
-  Sylabl:
-    "This is Sylabl",
-  CalorieCounter:
-    "This is a calorie Counter",
-  MockSocialMedia:
-    "This is a mock social media website",
+    "I'm a second year Computer Science honours student in the cybersecurity stream and am always looking to find avenues to increase my experience, below you can see only a few of the projects that I've done.",
   aboutImage:
     "https://i.imgur.com/QJApxMQh.jpg",
 
@@ -102,34 +188,54 @@ export default {
 
   skills: [
     {
-      img: htmlIcon,
+      img: javaIcon,
       para:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,",
-    },
-    {
-      img: cssIcon,
-      para:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,",
+        "Java",
     },
     {
       img: jsIcon,
       para:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,",
+        "JavaScript",
+    },
+    {
+      img: nodeIcon,
+      para:
+        "NodeJS",
     },
     {
       img: reactIcon,
       para:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,",
+        "React",
     },
     {
-      img: designIcon,
+      img: reduxIcon,
       para:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,",
+        "Redux",
     },
     {
-      img: codeIcon,
+      img: expressIcon,
       para:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,",
+        "Express",
+    },
+    {
+      img: mongooseIcon,
+      para:
+        "Mongoose",
+    },
+    {
+      img: pythonIcon,
+      para:
+        "Python",
+    },
+    {
+      img: cIcon,
+      para:
+        "C",
+    },
+    {
+      img: htmlIcon,
+      para:
+        "HTML",
     },
   ],
 
@@ -144,21 +250,13 @@ export default {
 
   //   Contact Section --------------
 
-  contactSubHeading: "Let's create your next experience together",
+  contactSubHeading: "Thanks for taking a look! If you want to contact me further take a look at the links below.",
   social: [
     // Add Or Remove The Link Accordingly
-    { img: githubIcon, url: "https://github.com/chetanverma16" },
+    { img: githubIcon, url: "https://github.com/Yacine-Saoudi" },
     {
-      img: codepenIcon,
-      url: "https://www.codepen.com/",
-    },
-    {
-      img: dribbbleIcon,
-      url: "https://dribbble.com/chetanverma",
-    },
-    {
-      img: instagramIcon,
-      url: "https://www.instagram.com/",
+      img: linkedIn,
+      url: "https://www.linkedin.com/in/yacine-saoudi-9635121b0//",
     },
   ],
 
