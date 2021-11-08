@@ -1,6 +1,6 @@
 // Skills Icons
 import htmlIcon from "./images/html.png"
-import cIcon from "./images/c.png"
+import cIcon from "./images/C.png"
 import reactIcon from "./images/react.png"
 import jsIcon from "./images/javascript.png"
 import javaIcon from "./images/java.png"
