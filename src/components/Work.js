@@ -38,6 +38,7 @@ const Work = () => {
                 ></Info>
               ))}
             </Fade>
+
         </div>
       </div>
     </div>

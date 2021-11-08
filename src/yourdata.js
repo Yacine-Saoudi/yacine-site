@@ -9,6 +9,8 @@ import mongooseIcon from "./images/mongoose.png"
 import expressIcon from "./images/express.png"
 import reduxIcon from "./images/redux.png"
 import nodeIcon from "./images/nodejs.png"
+import yacinePic from "./images/pfp.jpeg"
+import syllablPic1 from "./images/syllabl1.png"
 
 // Social Icon
 import githubIcon from "./images/github.png"
@@ -45,6 +47,10 @@ export default {
       id: "Sylabl",
       github: [
         {
+          link: "syllabl.net",
+          name: "Syllabl"
+        },
+        {
           link: "https://github.com/Yacine-Saoudi/orate-io-frontend",
           name: "Sylabl Frontend Repo"
         },
@@ -52,6 +58,9 @@ export default {
           link: "https://github.com/Yacine-Saoudi/orate-io-backend",
           name: "Sylabl Backend Repo"
         },
+      ],
+      images: [
+        syllablPic1, 
       ],
       langs: [
         {
@@ -109,6 +118,9 @@ export default {
         name: "Calorie Counter Repo"
         },
       ],
+      images: [
+         
+      ],
       langs: [
         {
           img: pythonIcon,
@@ -128,6 +140,9 @@ export default {
         link: "https://github.com/Yacine-Saoudi/mern-practice",
         name: "Mock Site Repo"
         },
+      ],
+      images: [
+        
       ],
       langs: [
         {
@@ -178,7 +193,7 @@ export default {
   aboutParaOne:
     "I'm a second year Computer Science honours student in the cybersecurity stream and am always looking to find avenues to increase my experience, below you can see only a few of the projects that I've done.",
   aboutImage:
-    "https://i.imgur.com/QJApxMQh.jpg",
+    yacinePic,
 
   //   End About Section ---------------------
 
